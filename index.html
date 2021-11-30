@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">STUDENT SATISFACTION SURVEY</h1>
+<p id="description">Fill this Form....</p>
+  <div id="wrapper">
+  
+<form id="survey-form">
+  <label id="name-label">Name:</label>
+  <input type="text" id="name" placeholder="Your Name....." required><br>
+  <label id="email-label">Email:</label>
+ <input type="email" id="email"
+       pattern=".+@globex\.com" size="30" placeholder="Your Email....." required><br>
+  <label id="number-label">Phone.No:</label>
+<input type="number" id="number"
+    min="10" max="1000"  placeholder="82346..." required><br>
+  <label>How often do you use the campus facilities?</label>
+  <select id="dropdown">
+    <option value="Never">Never</option>
+      <option value="Rarely">Rarely</option>
+       <option value="Monthly">Monthly</option>
+     <option value="Weekly">Weekly</option>
+     <option value="Daily">Daily</option>
+  </select>
+  <br>
+  <label>What is the quality of food served on campus?</label>
+  <br>
+  <div id="radiocenter">
+  <input type="radio" name="s" class="h" value="Unsatisfactory" >
+  <label>Unsatisfactory</label><br>
+  <input type="radio" name="s"  class="h" value="Poor" >
+   <label>Poor</label><br>
+   <input type="radio" name="s" class="h" value="Excellent" >
+   <label>Excellent</label><br>
+</div>
+  <label>What motivates you to learn more?</label><br>
+  <div id="checkcenter">
+  <input type="checkbox" value="Asking a lot of questions to the teacher">
+  <label>Asking a lot of questions to the teacher</label><br>
+  <input type="checkbox" value="Asking a lot of questions to the teacher">
+  <label>Sports and other extracurricular activities</label><br>
+  <input type="checkbox" value="Asking a lot of questions to the teacher">
+  <label>Completing various assignments</label><br>
+    <input type="checkbox" value="Asking a lot of questions to the teacher">
+  <label>Other...</label><br>
+</div>
+  <label>tell us a feedback about school in your own words...</label><br>
+  <textarea rows="9" cols="25"></textarea><br>
+  
+  <button id="submit" >SUBMIT</button>
+</form>
+  </div>
+    
+</body>
+</html>
